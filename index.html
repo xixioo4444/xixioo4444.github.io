@@ -149,6 +149,58 @@
                 margin: 5px 0;
             }
         }
+
+        .support {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .support h2 {
+            text-align: center;
+            color: #ff6b00;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .support-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .support-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .support-card h3 {
+            color: #ff6b00;
+            margin: 15px 0;
+        }
+
+        .support-link {
+            color: #ff6b00;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .support-link:hover {
+            color: #ff9f00;
+        }
+
+        @media (max-width: 768px) {
+            .support-content {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -181,6 +233,26 @@
                     <div class="feature-icon">🎯</div>
                     <h3>播放控制功能</h3>
                     <p>支持倍速播放、逐帧播放、灵活缩放模式，满足不同场景下的观看需求。为视频创作者、学习者以及影视爱好者提供了精准控制播放进度的能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="support-content">
+                <div class="support-card">
+                    <div class="feature-icon">📧</div>
+                    <h3>邮件支持</h3>
+                    <p>如果您有任何问题或建议，请发送邮件至：</p>
+                    <a href="mailto:xixioo444444@sina.com" class="support-link">xixioo444444@sina.com</a>
+                </div>
+                <div class="support-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>在线反馈</h3>
+                    <p>您可以通过应用内的反馈功能直接向我们反馈问题或建议。</p>
+                    <p>在应用中点击"设置" -> "联系我们"即可提交反馈。</p>
                 </div>
             </div>
         </div>
